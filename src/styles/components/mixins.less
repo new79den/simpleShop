@@ -14,5 +14,21 @@
   -webkit-background-size:cover;
   background-size:cover;
   background-attachment: @att;
-
+}
+.transition(@prop: all, @time: 0.3s, @ease: ease-in-out) {
+  transition: @prop @time @ease;
+}
+.overlay(@opacity:30%){
+  position: relative;
+  z-index: 1;
+  &:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: fade(@overlay, @opacity);
+    z-index: -1;
+  }
 }

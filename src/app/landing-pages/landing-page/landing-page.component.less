@@ -1,1 +1,32 @@
+@import "../../../styles/style";
+
+:host-context(.theme-first){
+  font-family: Segoe, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24/14;
+
+  h3{
+    text-transform: uppercase;
+    font-size: 1.714em;
+    line-height: 1;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  & /deep/ .ss-heading{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2.143em;
+    margin-bottom: 40px;
+    margin-top: 0;
+
+    &:after{
+      content: "";
+      width: 45px;
+      height: 2px;
+      margin-top: 10px;
+      background-color: #ffffff;
+    }
+  }
+}
 
