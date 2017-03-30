@@ -1,0 +1,57 @@
+@import "../../../../styles/style";
+
+@urlHeaderPages: "../../app/landing-pages/landing-page/header/img/";
+
+:host-context(.theme-first) {
+  header {
+    .bg-img("@{urlHeaderPages}hero-img.jpg", center, scroll);
+    .overlay();
+    .site-nav{
+      background-color: @overlay;
+      background-color: fade(@overlay, 85%);
+      padding: 40px 0;
+
+    ul {
+      .ul-unstyled;
+      float: right;
+
+      li {
+        display: inline-block;
+        margin-left: 15px;
+        a{
+          .transition();
+          color: #fff;
+          text-transform: uppercase;
+          border: 2px solid transparent;
+          display: block;
+          text-decoration: none;
+          padding: 10px 17px;
+          line-height: 1;
+          &.active{
+             border-color: @accent;
+             color:@accent;
+          }
+          &:hover{
+            color:@accent;
+          }
+        }
+      }
+    }
+  }
+    h1{
+      margin: 250px 0;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 300;
+      font-size:3em;
+      text-align: center;
+      line-height: 1.6em;
+    }
+
+    span{
+      background-color: fade(@overlay, 85px);
+      padding: 0 20px;
+    }
+}
+
+}

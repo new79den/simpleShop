@@ -1,0 +1,16 @@
+@import "../../../../styles/style";
+:host-context(.theme-first) {
+  .stn-services{
+    .ss-padding;
+    background-color: @accent;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  [class^="col-"]{
+    @media(max-width: 1200px){
+      margin-bottom: 50px;
+  }
+  }
+}
+
