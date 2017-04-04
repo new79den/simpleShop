@@ -27,15 +27,18 @@
       margin-top: 10px;
       background-color: #ffffff;
     }
+    &.black:after{
+      background-color: @font;
+    }
   }
 
   & /deep/ .horizontal-menu {
     .ul-unstyled;
 
-
     li {
       display: inline-block;
       margin-left: 15px;
+
       a {
         .transition();
         color: #fff;
@@ -54,7 +57,9 @@
         }
       }
     }
+    &.black a{
+      color: @font;
+    }
   }
-
 }
 

@@ -1,5 +1,26 @@
 @import "../../../styles/style";
 :host-context(.theme-first) {
   .sp-portfolio{
+    .ss-padding;
+    color: @font;
   }
+  .horizontal-menu{
+    float: right;
+  }
+  .thumbs-row{
+    [class^="col-"]{
+      margin-bottom: 30px;
+    }
+    a{
+      display: block;
+      height: 270px;
+      background-color: pink;
+    }
+  }
+  .ss-heading{
+    margin-bottom:80px;
+    margin-left: -15px;
+  }
+
+  min-height: 270px + 270px + 30px;
 }
