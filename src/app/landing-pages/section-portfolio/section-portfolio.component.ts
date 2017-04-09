@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'sp-section',
+  selector: 'ss-sp-section',
   templateUrl: 'section-portfolio.component.html',
   styleUrls: ['section-portfolio.component.less']
 })
