@@ -6,11 +6,13 @@ import { SectionComponent } from './section-services/section.component';
 import { SectionPortfolioComponent } from './section-portfolio/section-portfolio.component';
 import { SectionVideoComponent } from './section-video/section-video.component';
 import { SectionSocialComponent } from './section-social/section-social.component';
+import { SectionAboutComponent } from './section-about/section-about.component';
+import { SectionQuoteComponent } from './section-quote/section-quote.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [LandingPageComponent, HeaderComponent, SectionComponent, SectionPortfolioComponent, SectionVideoComponent, SectionSocialComponent]
+  declarations: [LandingPageComponent, HeaderComponent, SectionComponent, SectionPortfolioComponent, SectionVideoComponent, SectionSocialComponent, SectionAboutComponent, SectionQuoteComponent]
 })
 export class LandingPagesModule { }

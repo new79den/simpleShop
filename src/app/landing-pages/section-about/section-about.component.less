@@ -1,0 +1,41 @@
+@import "../../../styles/style";
+
+@urlBackgrount: "../../app/landing-pages/section-about/img/";
+
+:host-context(.theme-first) {
+  .ss-about {
+    .ss-padding;
+    .bg-img("@{urlBackgrount}camera.jpg", center, scroll);
+    color: #fff;
+  }
+
+  .social-link{
+    .ul-unstyled;
+
+    li{
+      display: inline-block;
+      margin-right: 20px;
+    }
+    a{
+      display: table;
+      color: #ffffff;
+      width: 65px;
+      height: 65px;
+      font-size: 30px;
+      text-align: center;
+      border: 2px solid #ffffff;
+      transition: all .2s ease-in-out;
+
+      &:hover{
+        border-color: @accent;
+        color: @accent;
+        text-decoration: none;
+      }
+
+      i{
+        display:  table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+}
