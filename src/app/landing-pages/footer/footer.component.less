@@ -1,0 +1,41 @@
+@import "../../../styles/style";
+
+
+:host-context(.theme-first) {
+  .ss-footer {
+    .ss-padding;
+    background-color: #353f47;
+    color: #515f67;
+    font-size: .857em;
+    font-weight: 500;
+  }
+  ul{
+    .ul-unstyled;
+    float: left;
+
+    li{
+      display: inline-block;
+      &:before{
+        content: "|";
+      }
+
+      &:first-child{
+        &:before{
+          content: "";
+        }
+        a{
+          padding-left: 0;
+        }
+      }
+    }
+    a{
+      color: inherit;
+      display: inline-block;
+      padding: 0 10px;
+    }
+  }
+
+  .copyright{
+    float: right;
+  }
+}

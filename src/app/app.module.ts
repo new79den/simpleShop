@@ -9,6 +9,7 @@ import {ShopModule} from "./shop/shop.module";
 import {landingPagesRoutes} from "./landing-pages/landing-pages.router";
 import {RouterModule} from "@angular/router";
 
+
 @NgModule({
   declarations: [
     AppComponent,
