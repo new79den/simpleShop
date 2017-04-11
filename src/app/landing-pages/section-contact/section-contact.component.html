@@ -2,14 +2,39 @@
 
 
   <h2 class="container ss-heading">Contact</h2>
+
   <div class="container">
     <form action="!#" class="row">
-      <div class="col-md-5">
-        <input type="text">
-        <input type="text">
+
+      <div class="col-md-6 col-md-push-6 frm-text-col">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consequuntur itaque minus nesciunt nihil.</p>
+        <p>Lorem ipsum dolor sit amet,<br>
+          consectetur adipisicing elit. <br>
+          Aspernatur consequuntur itaque minus <br>
+
+
       </div>
-      <div class="col-md-6">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consequuntur itaque minus nesciunt nihil.
+
+      <div class="col-md-5 col-md-pull-6">
+        <div class="frm-group">
+          <label for="name">For name</label>
+          <input id = "name" type="text" class="frm-control">
+        </div>
+
+        <div class="frm-group">
+          <label for="mail">For name</label>
+          <input id = "mail" type="email" class="frm-control">
+        </div>
+      </div>
+
+      <div class="col-md-12">
+       <div class="frm-group">
+         <label for="message">Message</label>
+         <textarea class="frm-control" id="message" ></textarea>
+       </div>
+       </div>
+      <div class="col-sm-6">
+        <button type="submit" class="btn-submit">Message</button>
       </div>
     </form>
   </div>

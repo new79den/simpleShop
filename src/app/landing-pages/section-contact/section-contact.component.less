@@ -1,0 +1,53 @@
+@import "../../../styles/style";
+@urlBackgrount: "../../app/landing-pages/section-contact/img/";
+
+:host-context(.theme-first) {
+  .ss-section-contact {
+    .ss-padding;
+    .bg-img("@{urlBackgrount}camera-2.jpg", center, scroll);
+    color: #fff;
+  }
+
+  .frm-group{
+    margin-bottom: 35px;
+  }
+
+  label{
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .frm-control{
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    height: 60px;
+    width: 100%;
+    padding: 0 15px;
+  }
+  textarea.frm-control{
+    height: 215px;
+  }
+  .btn-submit{
+    width: 100%;
+    background-color: @accent;
+    text-transform: uppercase;
+    border: none;
+    line-height: 1;
+    padding: 25px 0;
+    font-weight: 600;
+    border: 2px solid @accent;
+    transition: all .2s ease-in-out;
+    &:hover{
+      background-color: transparent;
+      color: @accent
+    }
+  }
+  .frm-text-col{
+    margin-top: 20px;
+
+    @media (max-width: 768px){
+      margin-top: 0;
+    }
+  }
+}
