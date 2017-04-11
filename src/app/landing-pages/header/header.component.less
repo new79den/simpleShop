@@ -30,5 +30,37 @@
       padding: 0 20px;
     }
   }
+//responsive menu
+  @media (max-width: 992px){
+    .site-nav{
+      position: relative;
+
+      .horizontal-menu{
+        position: absolute;
+        top: 100%;
+        left:0;
+        width: 100%;
+        background-color: @overlay;
+
+        li{
+          width: 100%;
+          display: block;
+          margin-left: 0;
+          text-align: center;
+          border-bottom: 1px solid lighten(@overlay, 5%);
+          a{
+            display: inline-block;
+            padding: 20px 30px;
+
+            &.active{
+              border: transparent;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
 
 }
